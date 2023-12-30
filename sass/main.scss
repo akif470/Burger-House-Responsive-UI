@@ -1,0 +1,52 @@
+@import "inside-sass/variables";
+@import "inside-sass/mixin";
+@import "inside-sass/base";
+@import "inside-sass/single-page";
+@import "inside-sass/animation";
+
+
+
+
+// alfa
+@font-face {
+	font-family: alfa;
+	src: url(../font@face/Alfa_Slab_One/alfa.ttf);
+}
+// bebas
+@font-face {
+	font-family: b-r;
+	src: url(../font@face/Bebas_Neue/BebasNeueRegular-gxj83.ttf);
+}
+@font-face {
+	font-family: b-m;
+	src: url(../font@face/Bebas_Neue/BebasNeueMediuam-d9A1l.ttf);
+}
+@font-face {
+	font-family: b-b;
+	src: url(../font@face/Bebas_Neue/BebasNeueBold-7B9LE.ttf);
+}
+// Montserrat
+@font-face {
+	font-family: m-r;
+	src: url(../font@face/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: m-m;
+	src: url(../font@face/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+	font-family: m-sb;
+	src: url(../font@face/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+	font-family: m-b;
+	src: url(../font@face/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+	font-family: m-xb;
+	src: url(../font@face/Montserrat/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+	font-family: m-black;
+	src: url(../font@face/Montserrat/Montserrat-Black.ttf);
+}

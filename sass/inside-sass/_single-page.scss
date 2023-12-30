@@ -1,0 +1,590 @@
+// hero
+#hero {
+	padding: 7rem 0;
+	background-image: url(../img/hero.png);
+	height: 100%;
+	width: 100%;
+	margin-top: 0 !important;
+	@include respond(phone) {
+		padding: 1rem 0 !important;
+	}
+	@include respond(tablet-por) {
+		padding: 2rem 0 !important;
+	}
+	@include respond(tablet-land) {
+		padding: 2rem 0 !important;
+	}
+	// nav
+	// nav
+	nav {
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	display: flex;
+	position: absolute;
+	padding: 0 9%;
+	height: 125px;
+	text-align: right;
+	align-items: center;
+	transition: all .5s;
+	justify-content: space-between;
+	background: transparent !important;
+	// background: rgba($color: #fff, $alpha: 1);
+	@include respond(phone) {
+		padding: 0 1%;
+		height: 90px;
+	}
+	@include respond(desktop) {
+		padding: 0 2%;
+	}
+	// @include respond(tablet-land) {
+		// padding: 0 2%;
+	// }
+	.right {
+		img {
+			// width: 80%;
+		}
+	}	
+	.left {
+		// text-align: right !important;
+		font-family: b-b;
+		@include respond(tablet-land) {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 105px;
+			right: -103%;
+			z-index: 0;
+			text-align: center;
+			transition: all .5s;
+			// box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.75);
+			// background: rgba($color: #fff, $alpha: 1);
+			background-image: url(../img/hero.png);
+			-webkit-box-shadow: 0px 0px 20px 1px rgba(150,75,0,1);
+			-moz-box-shadow: 0px 0px 20px 1px rgba(150,75,0,1);
+			box-shadow: 0px 0px 20px 1px rgba(150,75,0,1);
+		}
+		a {
+			line-height: 40px !important;
+			letter-spacing: 3px;
+			transition: .3s;
+			font-size: 16px;
+			padding: 1rem 0;
+			color: $primary-color;
+			white-space: nowrap;
+			text-transform: capitalize;
+			@include respond(tablet-land) {
+				display: block;
+				font-size: 18px;
+				line-height: 80px;
+				width: 100%;
+				text-transform: uppercase;
+				margin: 0;
+				border-bottom: 2px solid $primary-color;
+			}
+			&:hover {
+				color: $primary-color;
+			}
+			img {
+				width: 5%;
+				transform: rotateY(180deg);
+			}
+		&:nth-child(1) {
+			color: $primary-color;
+			@include respond(tablet-land) {
+				background-image: linear-gradient(to right, rgba(0,0,0, 1), rgba(65, 84, 241, 1)) !important;
+				-webkit-background-clip: text !important;
+				color: transparent !important;
+			}
+		}
+		&:not(:last-child) {
+			margin-right: 2rem;
+			}
+		}
+	}
+	#check {
+		display: none;
+	}
+	i {
+		color: $primary-color;
+		font-size: 2rem;
+		// margin-top: 21rem !important;
+		@media (min-width: 992px){
+			display: none;
+		}
+	}
+}
+#check:checked ~ .left {
+	right: -55%;
+	text-align: left !important;
+	@include respond(phone) {
+		right: 0%;
+	}
+	@include respond(tablet-por) {
+		right: -40%;
+	}
+}
+#check:checked ~ .left a {
+	padding: 1rem .5rem;
+}
+#check:checked ~ .left br {
+	display: none;
+}
+	// nav-end
+	// nav-end
+
+	.container-hero {
+		width: 100% !important;
+		height: 100% !important;
+		text-align: left;
+		align-items: center;
+		.row {
+			.col-lg-6 {
+				.hero-text {
+					margin-top: 7.5rem;
+				}
+				p {
+					font-size: 21px;
+					color: $primary-color;
+					@include respond(phone) {
+						font-size: 16px !important;
+					}
+					span {
+						letter-spacing: .5px;
+						padding: .3rem .5rem;						
+						border: 1px dashed $primary-color;						
+					}
+				}
+				h1 {
+					letter-spacing: 5px;
+					text-shadow: 3.5px 4px $white-color;
+					font-family: alfa;
+					text-transform: uppercase;
+					color: $primary-color;
+					font-size: 7.5rem;
+					@include respond(phone) {
+						font-size: 4rem !important;
+					}
+					@include respond(tablet-por) {
+						font-size: 6.5rem !important;
+					}
+				}
+				h3 {
+					letter-spacing: 5px;
+					 text-shadow: 3.5px 4px $white-color;
+					// text-shadow: 0px -10px 0px 0px rgba(255,255,255,1) !important; 
+					color: $primary-color;
+					font-family: alfa;
+					text-transform: uppercase;
+					font-size: 4.5rem;
+					@include respond(phone) {
+						font-size: 3rem !important;
+					}
+				}
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+//-----------------try-it------------------------------------------------
+//-----------------try-it------------------------------------------------
+//-----------------try-it------------------------------------------------
+//-----------------try-it------------------------------------------------
+//-----------------try-it------------------------------------------------
+//-----------------try-it------------------------------------------------
+//-----------------try-it------------------------------------------------
+#try-it {
+	.container {
+		.row {
+			.col-lg-6 {
+				@include respond(tablet-por) {
+					margin-bottom: 2.255rem !important;
+				}
+				@include respond(tablet-land) {
+					margin-bottom: 2.255rem !important;
+				}
+				img {
+					width: 100%;
+					border-radius: 10px;
+				}
+				.givemargin {
+					margin-bottom: 2.255rem !important;
+				}
+			}
+		}
+	}
+}
+//-------------tasty-burger---------------------------------------------
+//-------------tasty-burger---------------------------------------------
+//-------------tasty-burger---------------------------------------------
+//-------------tasty-burger---------------------------------------------
+//-------------tasty-burger---------------------------------------------
+//-------------tasty-burger---------------------------------------------
+//-------------tasty-burger---------------------------------------------
+#tasty-burger {
+	@include respond(phone) {
+		// display: none !important;
+	}
+	.container {
+		.section-para {
+			color: $lite-black;
+			font-size: 14px;
+			font-family: m-r;
+			padding: 0 8rem !important;
+			line-height: 24px;
+			@include respond(phone) {
+				padding: 0 2% !important;
+			}
+			@include respond(tablet-por) {
+				padding: 0 2.5% !important;
+			}
+		}
+		.row {	
+			margin-top: 4.5rem !important;
+			.col-lg-4 {
+				&:hover img {
+					transform: scale(1.0);
+				}
+				@include respond(phone) {
+					margin-bottom: 5rem;
+				}
+				@include respond(tablet-por) {
+					margin-bottom: 5rem;
+				}
+				.tasty-content {
+					@include respond(phone) {
+						padding-top: 1rem !important;
+					}
+				}
+				h1 {
+					font-family: b-b;
+					font-size: 2.2rem;
+					color: $primary-color;
+				}
+				img {
+					width: 100% !important;
+					cursor: pointer;
+					transition: all .3s ease-in-out;
+					transform: scale(1.1);
+					@include respond(phone) {
+						transform: scale(1.0);	
+					}
+				}
+				p {
+					color: $lite-black;
+					font-size: .95rem;
+					font-family: m-m;
+					padding: 0 2rem;
+					margin-bottom: 2.5rem;
+					letter-spacing: -.5px;
+					@include respond(phone) {
+						padding: 0 0 !important;
+					} 
+				}
+				a {
+					text-wrap: nowrap; 
+					letter-spacing: .8px;
+					color: $white-color;
+					font-size: 1.2rem;
+					background: $red-color;
+					font-family: alfa;
+					padding: .8rem 1.5rem;
+					text-transform: uppercase;
+					transition: $transition;
+					&:hover {
+						background: $after-hover;
+					}
+				}
+			}
+		}
+	}
+}
+//--------------discover--------------------------------------------
+//--------------discover--------------------------------------------
+//--------------discover--------------------------------------------
+//--------------discover--------------------------------------------
+//--------------discover--------------------------------------------
+//--------------discover--------------------------------------------
+//--------------discover--------------------------------------------
+#discover {
+	margin-top: 10rem !important;
+	@include respond(phone) {
+		margin-top: 2rem !important;
+	}
+	.container {
+		// box-shadow: 10px 10px 5px -7px rgba(153,153,153,1); 
+		// box-shadow: 10px 20px 25px -2px rgba(214,214,214,1);
+		// box-shadow: 10px 20px 25px -10px rgba(232,232,232,1);
+		box-shadow: 10px 20px 25px -2px rgba(215,215,215,1);
+		text-align: left;
+		@include respond(phone) {
+			box-shadow: 10px 20px 25px 10px rgba(215,215,215,1);
+		}
+		.row {
+			.col-lg-6 {
+				// border: 1px solid red;
+				@include respond(phone) {
+					padding: 14px !important;
+				}
+				img {
+					width: 100% !important;
+				}
+				h1 {
+					font-size: 1.8rem;
+					color: $primary-color;
+				}
+				h2 {
+					font-size: 2.6rem;
+					font-family: alfa;
+					text-transform: uppercase;
+					color: $primary-color;
+				}
+				p {
+					font-family: m-r;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}
+//--------------reservation-------------------------------
+//--------------reservation-------------------------------
+//--------------reservation-------------------------------
+//--------------reservation-------------------------------
+//--------------reservation-------------------------------
+//--------------reservation-------------------------------
+//--------------reservation-------------------------------
+//--------------reservation-------------------------------
+#reservation {
+	margin-top: 10rem !important;				
+	position: relative;
+	@include respond(phone) {
+		margin-top: 6.5rem !important;
+	}
+	.container {
+		.left-side-img {
+			position: absolute;
+			top: -30%;
+			// bottom: -20%;
+			right: 87.2%;
+			@include respond(phone) {
+				display: none !important;
+			}
+			@include respond(tablet-land) {
+				display: none !important;	
+			}
+		}
+		.right-side-img {
+			position: absolute;
+			// top: 100%;
+			left: 83.5%;
+			@include respond(phone) {
+				display: none !important;
+			}
+			@include respond(tablet-land) {
+				display: none;
+			}
+		}
+		.center-img {
+			position: absolute;
+			right: 75%;
+			top: 15%;
+			transform: rotate(15deg);
+			@include respond(phone) {
+				display: none !important;
+			}
+			@include respond(tablet-land) {
+				display: none;
+			}
+		}
+		.row {
+			margin-top: 4rem !important;
+			margin: 0 14rem;
+			@include respond(tablet-land) {
+				margin: 0 0 !important;
+			}
+		}
+		::placeholder {
+			color: $primary-color;
+			letter-spacing: .5px;
+		}
+		.col-lg-12 {
+			@include respond(tablet-land) {
+				margin-top: 1rem;
+			}
+			input {
+				margin-bottom: 1.6rem;
+				padding: .8rem 0;
+				padding-left: .7rem;
+				border-radius: 4px;
+				border: 1px solid $gray-color;
+				width: 36% !important;
+				@include respond(tablet-land) {
+					width: 45% !important;
+					// margin-left: 0 !important;
+					// margin-right: 0 !important;
+				}
+				&:focus,
+				&:active {
+					outline: 1px solid $yellow-color;
+					border: 1px solid $yellow-color;
+				}
+			}
+			button {
+				border-radius: 4px;
+				font-size: 16px;
+				letter-spacing: .6px;
+				font-family: alfa;
+				color: $white-color;
+				background: $red-color;
+				border: none;
+				outline: none;
+				text-transform: uppercase;
+				padding: .7rem 0;
+				width: 36% !important;
+				transition: $transition;
+				&:hover {
+					background: $after-hover;
+				}
+				@include respond(tablet-land) {
+					width: 45% !important;
+				}
+			}
+		}
+	}
+}
+//------------footer-------------------------------------------
+//------------footer-------------------------------------------
+//------------footer-------------------------------------------
+//------------footer-------------------------------------------
+//------------footer-------------------------------------------
+//------------footer-------------------------------------------
+//------------footer-------------------------------------------
+//------------footer-------------------------------------------
+#footer {
+	position: relative;
+	margin-top: 10.5rem !important;
+	margin-bottom: 2rem;
+	text-align: right !important;					
+	@include respond(phone) {
+		margin-top: 5rem !important;
+		margin-bottom: 0rem !important;
+	}
+	.container {
+		width: 100% !important;
+		background-repeat: no-repeat;
+		background-image: url(../img/footer-bg.png);
+		.row {
+			.col-lg-7 {
+				padding: 5rem 2rem;
+				text-align: left;
+				@include respond(phone) {
+					padding: 1rem 1rem !important;
+				}
+				@include respond(tablet-por) {
+					padding: 1rem 1rem !important;
+				}
+				@include respond(tablet-land) {
+					padding: 1rem 1rem !important;
+				}
+				.footer-logo {
+					width: 100% !important;
+				}
+				p {
+					padding-top: 2rem;
+					line-height: 28px;
+					color: $white-color;
+					font-family: m-r;
+					font-size: 14px;
+					padding-right: 12rem;
+					@include respond(phone) {
+						display: none;
+					}
+					@include respond(tablet-por) {
+						display: none;
+					}
+					@include respond(tablet-land) {
+						display: none;
+					}
+				}
+				h6 {
+					letter-spacing: .5px;
+					color: $white-color;
+					position: absolute;
+					top: 85%;
+				}
+				.branding {
+					@include respond(phone) {
+						display: none;
+					}
+					@include respond(tablet-por) {
+						display: none;
+					}
+					@include respond(tablet-land) {
+						display: none;
+					}
+				}
+			}
+			.col-lg-5 {
+				h1 {
+					position: absolute;
+					top: 57.8%;
+					right: 16%;
+					font-size: 24px !important;
+					color: $white-color;
+					@include respond(phone) {
+						display: none;
+					}
+					@include respond(tablet-por) {
+						display: none;
+					}
+					@include respond(tablet-land) {
+						display: none;
+					}
+				}
+				h2 {
+					position: absolute;
+					top: 68.3% !important;
+					right: 20.4% !important;
+					font-size: 24px !important;
+					color: $white-color;
+					@include respond(phone) {
+						display: none;
+					}
+					@include respond(tablet-por) {
+						display: none;
+					}
+					@include respond(tablet-land) {
+						display: none;
+					}
+				}
+				img {
+					position: absolute;
+					top: 83%;
+					right: 12%;
+					font-size: 24px !important;
+					color: $white-color;
+					@include respond(phone) {
+						display: none;
+					}
+					@include respond(tablet-por) {
+						display: none;
+					}
+					@include respond(tablet-land) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+//--------------end---------------------------------------
+//--------------end---------------------------------------
+//--------------end---------------------------------------
+//--------------end---------------------------------------
+//--------------end---------------------------------------
+//--------------end---------------------------------------
+//--------------end---------------------------------------
+//--------------end---------------------------------------

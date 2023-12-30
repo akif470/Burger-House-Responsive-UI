@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: b-r !important;
+	overflow-x: hidden !important;
+}
+html::-webkit-scrollbar {
+	width: .5rem;
+}
+html::-webkit-scrollbar-track {
+	background: #f2f2f2;
+}
+html::-webkit-scrollbar-thumb {
+	background: $red-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none !important;
+}
+section {
+	margin-top: 5rem !important;
+}
+.container {
+	text-align: center;
+	width: 100% !important;
+}
+.section-heading {
+	span {
+		padding: .4rem 1rem;
+		border-radius: 2.5px;
+		font-family: b-b;
+		font-size: 1.5rem;
+		color: $primary-color;
+		background: $yellow-color;
+		// color: red;
+	}
+}
+.section-big-heading {
+	font-family: alfa;
+	padding-top: 1.6rem;
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: $primary-color;
+	@include respond(phone) {
+		font-size: 2.4rem !important;
+	}
+}
